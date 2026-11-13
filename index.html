@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gaya Hamaz</title>
+  <meta name="description" content="Gaya Hamaz, commercial terrain B2B et développeur web, apps et SaaS. CV et LinkedIn." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://hamazgaya1994-max.github.io/" />
+  <meta property="og:title" content="Gaya Hamaz | Mon ticket gagnant" />
+  <meta property="og:description" content="Commercial B2B et développeur web, apps et SaaS. 7 ans de terrain, +27 % de CA en un an. Disponible en Île-de-France." />
+  <meta property="og:image" content="https://hamazgaya1994-max.github.io/apercu-linkedin.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="627" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://hamazgaya1994-max.github.io/apercu-linkedin.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=6" />
+</head>
+<body>
+  <!-- Pub d'accueil -->
+  <div id="pub" class="pub" role="dialog" aria-label="Ticket gagnant">
+    <div class="pub-inner">
+      <img src="pub.jpg" alt="Ticket gagnant, Gaya Hamaz, bon pour 1 entretien" />
+      <button id="pub-skip" class="pub-skip" type="button">Fermer dans <span id="pub-count">10</span> s</button>
+      <div class="pub-bar"><span id="pub-progress"></span></div>
+    </div>
+  </div>
+
+  <div class="bg" aria-hidden="true">
+    <span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span>
+    <div class="grid-lines"></div>
+  </div>
+
+  <header class="nav">
+    <a href="#accueil" class="logo">GH<span>.</span></a>
+    <nav class="links">
+      <a href="#accueil" data-tab="accueil" class="tab">Accueil</a>
+      <a href="#cv" data-tab="cv" class="tab">CV</a>
+      <a href="#linkedin" data-tab="linkedin" class="tab">
+        <svg class="li-logo" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        LinkedIn
+      </a>
+    </nav>
+    <a class="nav-cta" id="nav-mail" href="#">Me contacter</a>
+  </header>
+
+  <main>
+    <!-- ACCUEIL -->
+    <section id="accueil" class="panel">
+      <div class="hero">
+        <div class="hero-text">
+          <span class="badge r" style="--i:0"><span class="dot"></span><span id="home-badge"></span></span>
+          <h1 class="hero-name r" style="--i:1"><span id="first"></span><span class="stroke" id="last"></span></h1>
+          <p class="hero-role r" style="--i:2">Je suis <span class="type" id="type"></span><span class="caret"></span></p>
+          <p class="hero-intro r" style="--i:3" id="home-intro"></p>
+          <div class="hero-actions r" style="--i:4">
+            <a href="#cv" class="btn-glow">Voir mon CV</a>
+            <a href="#" class="btn-ghost" id="home-phone"></a>
+          </div>
+        </div>
+        <div class="hero-photo r" style="--i:2">
+          <div class="ring"></div>
+          <div class="photo" id="home-photo"></div>
+          <span class="chip c1">Vente B2B</span>
+          <span class="chip c2">Web · Apps · SaaS</span>
+        </div>
+      </div>
+
+      <div class="stats r" style="--i:5" id="home-stats"></div>
+
+      <div class="marquee r" style="--i:6"><div class="track" id="marquee"></div></div>
+
+      <div class="big-cards">
+        <a href="#cv" class="big-card r glow" style="--i:7">
+          <span class="num">01</span>
+          <h2>Mon CV</h2>
+          <p>Parcours, expériences, formation et compétences. Version PDF à télécharger.</p>
+          <span class="go">Ouvrir <i>→</i></span>
+        </a>
+        <a href="#linkedin" class="big-card li r glow" style="--i:8">
+          <span class="num">02</span>
+          <svg class="li-big" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          <h2>LinkedIn</h2>
+          <p>Mon profil, mon réseau et mon activité professionnelle.</p>
+          <span class="go">Ouvrir <i>→</i></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- CV -->
+    <section id="cv" class="panel">
+      <div class="cv-head glass r" style="--i:0">
+        <div class="avatar" id="cv-photo"></div>
+        <div class="cv-id">
+          <h1 id="cv-name"></h1>
+          <p class="grad-text" id="cv-title"></p>
+          <p class="contact" id="contact"></p>
+        </div>
+        <a class="btn-glow" href="cv.pdf" download>Télécharger le PDF</a>
+      </div>
+
+      <div class="cv-grid">
+        <div>
+          <h3 class="h r" style="--i:1">Profil</h3>
+          <p class="summary r" style="--i:1" id="summary"></p>
+
+          <h3 class="h r" style="--i:2">Expériences</h3>
+          <div class="timeline" id="experiences"></div>
+
+          <h3 class="h">Formation</h3>
+          <div class="timeline" id="education"></div>
+        </div>
+
+        <aside class="side">
+          <div class="glass box r" style="--i:2">
+            <h3 class="h">Compétences</h3>
+            <ul class="tags" id="skills"></ul>
+          </div>
+          <div class="glass box r" style="--i:3">
+            <h3 class="h">Outils</h3>
+            <ul class="tags" id="tools"></ul>
+          </div>
+          <div class="glass box r" style="--i:4">
+            <h3 class="h">Langues</h3>
+            <ul class="langs" id="languages"></ul>
+          </div>
+          <div class="glass box r" style="--i:5">
+            <h3 class="h">Permis</h3>
+            <p id="licence"></p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- LINKEDIN -->
+    <section id="linkedin" class="panel">
+      <div class="li-card r" style="--i:0">
+        <div class="li-cover">
+          <svg class="li-mark" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </div>
+        <div class="li-body">
+          <div class="avatar big" id="li-photo"></div>
+          <h1 id="li-name"></h1>
+          <p class="li-head" id="li-headline"></p>
+          <p class="muted" id="li-location"></p>
+          <a class="btn-li" id="li-link" href="#" target="_blank" rel="noopener">
+            <svg class="li-logo" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            Voir mon profil
+          </a>
+        </div>
+      </div>
+      <div id="li-posts-wrap" hidden>
+        <h3 class="h">Publications</h3>
+        <div class="posts" id="li-posts"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><span id="year"></span> · <span id="footer-name"></span></footer>
+
+  <script src="data.js?v=6"></script>
+  <script src="script.js?v=6"></script>
+</body>
+</html>
